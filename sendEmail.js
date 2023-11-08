@@ -9,7 +9,7 @@ module.exports = async (status, entreprise, email, domaine, telephone) => {
       service: 'gmail',
       auth: {
         user: 'aarenabusiness@gmail.com',
-        pass: 'bnzu nkpb auez dndk',
+        pass: '',
       },
     });
     const mailOption = {
