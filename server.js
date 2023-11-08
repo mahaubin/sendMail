@@ -6,6 +6,9 @@ const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cors());
+app.get('api/test', async (req, res) => {
+  res.status(200).send({ message: 'message tout vas bien' });
+});
 
 app.post('/api/sendEmail', async (req, res) => {
   try {
